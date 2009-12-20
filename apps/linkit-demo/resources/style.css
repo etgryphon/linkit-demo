@@ -1,0 +1,43 @@
+.family-canvas {
+  background-color: #666666;
+}
+
+.male {
+  background-color: blue;
+  color: white;
+}
+
+.female {
+  background-color: #FF3399;
+  color: white;
+}
+
+.add-button {
+  border: 2px solid black;
+  background-color: #FFCC33;
+  color: black;
+}
+
+/* Terminal colors*/
+.father-terminal {
+  background-color: #0033FF;
+}
+
+.mother-terminal {
+  background-color: #CC0033;
+}
+
+.spouse-terminal {
+  background-color: #FFFF33;
+}
+
+.children-terminal {
+  background-color: #00FF33;
+}
+
+.pets-terminal {
+  background-color: #FF3300;
+}
+
+
+

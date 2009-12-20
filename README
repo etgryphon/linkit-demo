@@ -1,0 +1,20 @@
+=== Welcome to the Sproutcore-UI (SCUI) LinkIt Demo Application: ===
+
+This is a basic sample app for some great directed and non-directed graph from the SCUI:LinkIt framework
+
+=== INSTALLATION ===
+
+In your projects directory, run:
+  git clone git://github.com/etgryphon/linkit-demo.git
+  cd linkit-demo
+  mkdir frameworks
+  cd frameworks
+  git clone git://github.com/etgryphon/sproutcore-ui.git scui
+
+=== CONTRIBUTORS ===
+
+Main Architect: Evin Grano
+  
+=== LICENSE ===
+
+LinkIt Demo is under the MIT License
