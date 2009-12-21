@@ -19,6 +19,29 @@
 }
 
 /* Terminal colors*/
+.invite {
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+}
+.father-terminal.invite, .mother-terminal.invite {
+  border-top: 2px solid yellow;
+}
+
+.children-terminal.invite {
+  border-bottom: 2px solid yellow;
+}
+
+.pets-terminal.invite, .spouse-terminal.invite {
+  border-left: 0px solid yellow;
+  border-right: 0px solid yellow;
+  border-top: 2px solid yellow;
+  border-bottom: 2px solid yellow;
+}
+
+.accept {
+  background-color: black;
+}
+
 .father-terminal {
   background-color: #0033FF;
 }
