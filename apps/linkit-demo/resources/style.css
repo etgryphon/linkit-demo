@@ -10,6 +10,10 @@
 .female {
   background-color: #FF3399;
   color: white;
+},
+
+.pet {
+  border: 1px solid orange;
 }
 
 .add-button {
@@ -51,14 +55,14 @@
 }
 
 .spouse-terminal {
-  background-color: #FFFF33;
+  background-color: black;
 }
 
 .children-terminal {
-  background-color: #00FF33;
+  background-color: #990099;
 }
 
-.pets-terminal {
+.pets-terminal, .master-terminal {
   background-color: #FF3300;
 }
 

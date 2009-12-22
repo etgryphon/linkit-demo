@@ -23,9 +23,18 @@ LinkItDemo.Family = SC.Record.extend({
   
   members: function(){
     var people = this.get('people');
-    var members = SC.clone(people);
-    // TODO: [EG] Add the pets...
-    return members;//members.concat(pets);
+    var pets = this.get('pets');
+    
+    var i, len, members = [];
+    len = people.get('length');
+    for(i = 0; i < len; i++ ){
+      members.push(people.objectAt(i));
+    }
+    len = pets.get('length');
+    for(i = 0; i < len; i++ ){
+      members.push(pets.objectAt(i));
+    }
+    return members;
   }.property('people', 'pets').cacheable(),
   
   // ..........................................................
@@ -40,7 +49,8 @@ LinkItDemo.Family = SC.Record.extend({
     if (store && memberModel) {
       var member = LinkItDemo.createRecord(memberModel, {
         isMale: isMale,
-        name: 'Name here...'
+        name: 'Name here...',
+        kindOfPet: 'Dog'
       });
       
       if (member.instanceOf(LinkItDemo.Human)){

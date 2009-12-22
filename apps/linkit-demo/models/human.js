@@ -18,7 +18,7 @@ LinkItDemo.Human = SC.Record.extend(LinkIt.Node, {
   father: SC.Record.attr('LinkItDemo.Human'),
   spouse: SC.Record.attr('LinkItDemo.Human'),
   pets: SC.Record.toMany('LinkItDemo.Pet', {
-    inverse: 'owner',
+    inverse: 'belongsTo',
     isMaster: YES
   }),
     
@@ -88,7 +88,7 @@ LinkItDemo.Human = SC.Record.extend(LinkIt.Node, {
     var eGender = en.get('isMale') ? 'boy' : 'girl';
     var terms = '%@:%@ %@:%@'.fmt(sGender, st, eGender, et);
     if(sGender !== eGender && st === 'sig' && et === 'sig') { 
-      //console.log('Man Married To Woman'); 
+      //console.log('(%@,%@) Man married to woman: %@'.fmt(SC.guidFor(sn), SC.guidFor(en), terms ));
       return YES; 
     }
 
@@ -97,6 +97,8 @@ LinkItDemo.Human = SC.Record.extend(LinkIt.Node, {
     var hasDad = (terms.indexOf('dad') > -1);
     var momHasKids = (terms.indexOf('girl:kids') > -1);
     var hasMom = (terms.indexOf('mom') > -1);
+    var hasPets = (terms.indexOf('animals') > -1);
+    var hasOwner = (terms.indexOf('myOwner') > -1);
     
     //console.log('dadKidsIdx: %@, hasDadIdx: %@, momKidsIdx: %@, hasMomIdx: %@'.fmt(dadHasKids, hasDad, momHasKids, hasMom));
     
@@ -108,6 +110,11 @@ LinkItDemo.Human = SC.Record.extend(LinkIt.Node, {
     if(momHasKids && hasMom) { 
       //console.log('(%@,%@) Mom link to Kids: %@'.fmt(SC.guidFor(sn), SC.guidFor(en), terms ));
       return YES; 
+    }
+    
+    if(hasPets && hasOwner){
+      //console.log('(%@,%@) Owner link to pet: %@'.fmt(SC.guidFor(sn), SC.guidFor(en), terms ));
+      return YES;
     }
  
     // TODO: [EG] add the check to make sure there is no incest

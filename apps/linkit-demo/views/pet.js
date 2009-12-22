@@ -12,7 +12,7 @@ sc_require('mixins/gender');
 
 LinkItDemo.PetView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, {
   classNames: ['pet'],
-  layout: { top: 0, left: 0, width: 150, height: 60 },
+  layout: { top: 0, left: 0, width: 150, height: 80 },
   displayProperties: ['content'],
   content: null,
   
@@ -53,12 +53,11 @@ LinkItDemo.PetView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, {
       SC.View.extend(LinkIt.Terminal, {
         classNames: ['master-terminal'],
         layout: { centerX: 0, top: 0, width: 20, height: 20 },
-        linkStyle: { lineStyle: LinkIt.STRAIGHT, width: 3, color: '#4C678E', cap: LinkIt.ROUND},
+        linkStyle: { lineStyle: LinkIt.STRAIGHT, width: 3, color: '#FF3300', cap: LinkIt.ROUND},
         node: content,
         terminal: 'myOwner'
       })
     );
-    //this.cacheTerminalView(outputTerminal, outputTerminal.get('terminal'));
     childViews.push(this._term_myOwner);
     
     this.set('childViews', childViews);

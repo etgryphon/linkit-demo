@@ -47,7 +47,6 @@ LinkItDemo.HumanView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, {
         direction: LinkIt.INPUT_TERMINAL
       })
     );
-    //this.cacheTerminalView(outputTerminal, outputTerminal.get('terminal'));
     childViews.push(this._term_dad);
     
     // Mother Terminal
@@ -61,7 +60,6 @@ LinkItDemo.HumanView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, {
         direction: LinkIt.INPUT_TERMINAL
       })
     );
-    //this.cacheTerminalView(inputTerminal, inputTerminal.get('terminal'));
     childViews.push(this._term_mom);
     
     var spouseLayout = isMale ? { right: 0, centerY: 0, width: 20, height: 20 } : { left: 0, centerY: 0, width: 20, height: 20 } ;
@@ -69,12 +67,11 @@ LinkItDemo.HumanView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, {
       SC.View.extend(LinkIt.Terminal, {
         classNames: ['spouse-terminal'],
         layout: spouseLayout,
-        linkStyle: { lineStyle: LinkIt.HORIZONTAL_CURVED, width: 3, color: '#FFFF33', cap: LinkIt.ROUND},      
+        linkStyle: { lineStyle: LinkIt.HORIZONTAL_CURVED, width: 3, color: 'black', cap: LinkIt.ROUND},      
         node: content,
         terminal: 'sig'
       })
     );
-    //this.cacheTerminalView(systemTerminal, systemTerminal.get('terminal'));
     childViews.push(this._term_sig);
     
     // pets
@@ -83,13 +80,12 @@ LinkItDemo.HumanView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, {
       SC.View.extend(LinkIt.Terminal, {
         classNames: ['pets-terminal'],
         layout: petsLayout,
-        linkStyle: { lineStyle: LinkIt.STRAIGHT, width: 3, color: '#4C678E', cap: LinkIt.ROUND},
+        linkStyle: { lineStyle: LinkIt.STRAIGHT, width: 3, color: '#FF3300', cap: LinkIt.ROUND},
         node: content,
         terminal: 'animals',
         direction: LinkIt.OUTPUT_TERMINAL
       })
     );
-    //this.cacheTerminalView(inputTerminal, inputTerminal.get('terminal'));
     childViews.push(this._term_animals);
     
     // children
@@ -104,7 +100,6 @@ LinkItDemo.HumanView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, {
         direction: LinkIt.OUTPUT_TERMINAL
       })
     );
-    //this.cacheTerminalView(inputTerminal, inputTerminal.get('terminal'));
     childViews.push(this._term_kids);
 
     this.set('childViews', childViews);

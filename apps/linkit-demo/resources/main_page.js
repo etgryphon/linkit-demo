@@ -31,8 +31,8 @@ LinkItDemo.mainPage = SC.Page.design({
     
     buttons: SC.View.design({
       layout: {right: 0, top: 0, height: 150, width: 100},
-      childViews: 'addMale addFemale'.w(),
-      //childViews: 'addMale addFemale addPet'.w(),
+      //childViews: 'addMale addFemale'.w(),
+      childViews: 'addMale addFemale addPet'.w(),
       
       addMale: SC.LabelView.design( SCUI.SimpleButton, {
         layout: {left: 0, right: 0, top: 0, height: 50},
@@ -48,7 +48,7 @@ LinkItDemo.mainPage = SC.Page.design({
         value: 'Add Female',
         target: LinkItDemo.familyController,
         action: 'addFemale'
-      })/*,
+      }),
       
       addPet: SC.LabelView.design( SCUI.SimpleButton, {
         layout: {left: 0, right: 0, bottom: 0, height: 50},
@@ -56,7 +56,7 @@ LinkItDemo.mainPage = SC.Page.design({
         value: 'Add Pet',
         target: LinkItDemo.familyController,
         action: 'addPet'
-      })*/
+      })
       
     })
   })

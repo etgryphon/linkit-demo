@@ -7,7 +7,7 @@ LinkItDemo.Family.FIXTURES = [
     type: 'Family',
     name: 'Doe Family',
     people: ['1', '2', '3', '4'],
-    pets: []//['1', '2', '3']
+    pets: ['1']
   },
   
   {
@@ -15,6 +15,6 @@ LinkItDemo.Family.FIXTURES = [
     type: 'Family',
     name: 'Obama Family',
     people: ['5', '6', '7', '8', '9', '10', '11'],
-    pets: []//['2', '3']
+    pets: ['2']
   }
 ];
