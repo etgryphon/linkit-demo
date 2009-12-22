@@ -11,6 +11,6 @@ config :scui, :required => [:sproutcore, :'scui/drawing', :'scui/linkit']
 
 # This configuration section will be applied to all bundles used by your
 # application, even bundles that come from other gems.
-config :'linkit-demo' do |c|
+config :family_tree do |c|
   c[:required] = [:sproutcore, :scui]
 end
