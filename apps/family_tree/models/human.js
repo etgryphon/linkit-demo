@@ -35,22 +35,22 @@ LinkItDemo.Human = SC.Record.extend(LinkIt.Node, {
     var mom = this.get('mother');
     if (mom){
       var momLink = SC.Object.create( LinkIt.Link, {
-        startNode: this,
-        startTerminal: 'mom',
-        endNode: mom,
-        endTerminal: 'kids'
+        startNode: mom,
+        startTerminal: 'kids',
+        endNode: this,
+        endTerminal: 'mom'
       });
       links.push(momLink);
     }
-    
+
     // get father
     var dad = this.get('father');
     if (dad){
       var dadLink = SC.Object.create( LinkIt.Link, {
-        startNode: this,
-        startTerminal: 'dad',
-        endNode: dad,
-        endTerminal: 'kids'
+        startNode: dad,
+        startTerminal: 'kids',
+        endNode: this,
+        endTerminal: 'dad'
       });
       links.push(dadLink);
     }
