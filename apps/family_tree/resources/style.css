@@ -1,45 +1,90 @@
+/* List */
+.sc-list-view.master-list {
+  background-color:#D4DDE3;
+  border-right:1px solid black;
+}
+
+.sc-list-view.master-list .sc-list-item-view label {
+  padding-left:10px;
+}
+
+.sc-list-view.master-list .sc-list-item-view.sel {
+  background: #4077FF;
+  background: -moz-gradient(linear, left top, left bottom, from(#4077FF), to(#2951CE));
+  background: -webkit-gradient(linear, left top, left bottom, from(#4077FF), to(#2951CE));
+  color:white;
+}
+
+.sc-list-view.master-list .sc-list-item-view.sel label {
+  font-weight: bold;
+}
+
+/* Canvas */
 .family-canvas {
-  background-color: #666666;
+  background-color: #555;
+}
+
+/* Nodes */
+.human, .pet {
+  border: 2px solid rgba(112, 255, 255, 0);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .75);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .75);
+  overflow:visible; /* why not let the terminals poke out a bit? */
+  
+  -moz-transition: border .1s linear;
+  -webkit-transition: border .1s linear;
+}
+
+.human.selected, .pet.selected {
+  border: 2px solid rgba(255, 255, 255, 1);
+  -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, .75);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .75);
 }
 
 .male {
-  background-color: blue;
-  color: white;
+  background: #A5C0DC;
+  background: -moz-gradient(linear, left top, left bottom, from(#A5C0DC), to(#728DA9));
+  background: -webkit-gradient(linear, left top, left bottom, from(#A5C0DC), to(#728DA9));
+  color: #00275B;
+  text-shadow: 0px 1px 1px white;
 }
 
 .female {
-  background-color: #FF3399;
-  color: white;
-},
+  background: #E08CDF;
+  background: -moz-gradient(linear, left top, left bottom, from(#E08CDF), to(#A65AA1));
+  background: -webkit-gradient(linear, left top, left bottom, from(#E08CDF), to(#A65AA1));
+  color: #490048;
+  text-shadow: 0px 1px 1px white;
+}
 
 .pet {
-  border: 1px solid orange;
+  background: #9BD493;
+  background: -moz-gradient(linear, left top, left bottom, from(#9BD493), to(#65985E));
+  background: -webkit-gradient(linear, left top, left bottom, from(#9BD493), to(#65985E));
 }
 
 .add-button {
-  border: 2px solid black;
-  background-color: #FFCC33;
-  color: black;
+  -moz-transition: opacity .15s linear;
+  -webkit-transition: opacity .15s linear;
+  opacity: .5;
+}
+
+.add-button:hover {
+  opacity:1;
 }
 
 /* Terminal colors*/
-.invite {
-  border-left: 2px solid yellow;
-  border-right: 2px solid yellow;
-}
-.father-terminal.invite, .mother-terminal.invite {
-  border-top: 2px solid yellow;
-}
-
-.children-terminal.invite {
-  border-bottom: 2px solid yellow;
-}
-
-.pets-terminal.invite, .spouse-terminal.invite {
-  border-left: 0px solid yellow;
-  border-right: 0px solid yellow;
-  border-top: 2px solid yellow;
-  border-bottom: 2px solid yellow;
+.father-terminal, .mother-terminal, .pets-terminal, .spouse-terminal, .children-terminal, .master-terminal {
+  border: 2px solid rgba(255, 255, 255, 0);
+  -moz-transition: border .1s linear;
+  -moz-box-shadow: 0px 0px 2px rgba(0,0,0,.75);
+  -moz-border-radius: 7px;
+  
+  -webkit-transition: border .1s linear;
+  -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,.75);
+  -webkit-border-radius: 7px;
 }
 
 .accept {
@@ -47,24 +92,33 @@
 }
 
 .father-terminal {
-  background-color: #0033FF;
+  background-color: #A5C0DC;
+  border: 1px solid #325478;
 }
 
 .mother-terminal {
-  background-color: #CC0033;
+  background-color: #E08CDF;
+  border: 1px solid #642462;
 }
 
 .spouse-terminal {
-  background-color: black;
+  background-color: #C63534;
+  border:1px solid #570000;
+  
 }
 
 .children-terminal {
-  background-color: #990099;
+  background-color: #9D58CE;
+  border:1px solid #3B155B;
 }
 
 .pets-terminal, .master-terminal {
-  background-color: #FF3300;
+  background-color: #9BD493;
+  border:1px solid #074300;
 }
 
 
-
+/* Invites */
+.invite {
+  border: 2px solid white;
+}
