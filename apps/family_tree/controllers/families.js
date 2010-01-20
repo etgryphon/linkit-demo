@@ -15,5 +15,20 @@ sc_require('core');
 LinkItDemo.familiesController = SC.ArrayController.create( 
   /* @scope LinkItDemo.familiesController */{
     content: null,
-    selection: null
+    selection: null,
+    
+    addFamily: function(){
+      var store = LinkItDemo.get('store');
+      if (store) {
+        var family = LinkItDemo.createRecord(LinkItDemo.Family, {
+          name: 'New Family',
+          people: [],
+          pets: []
+        });
+      }
+    },
+    
+    removeFamily: function(){
+      alert('You are removing a family');
+    }
 });

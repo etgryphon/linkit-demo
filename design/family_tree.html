@@ -1,0 +1,42 @@
+<!-- Header -->
+<div class="header" style="height: 56px; top: 0; left: 0; right: 0;">
+  <!-- If using img tag (blank.gif is a default SC thing I believe) -->
+  <img src="blank.gif" class="logo" style="width: 216px; height: 37px; centerY: 0; left: 15px;" />
+  <!-- If using other tag (div, span, whatever is easier for you) -->
+  <div class="logo" style="width: 216px; height: 37px; centerY: 0; left: 15px;"></div>
+  <!-- If using a CSS image replacement technique (really the same as #2 except better for search engines and avoids using an empty div tag which is somewhat controversial and not well supported by even modern browsers [shouldn't be using them in orion either which is a whole separate issue since SC generates them automatically] -->
+  <div class="logo" style="width: 216px; height: 37px; centerY: 0; left: 15px;">family tree</div>
+  <!-- End if (I recommend option 1 or 3) -->
+  <!-- This is the text that says "a scui linkit demo" in the header - same cases for logo apply, use whichever method of displaying you want -->
+  <div class="blurb" style="width: 169px; height: 13px; bottom: 10px; right: 15px;">a scui linkit demo</div>
+</div>
+
+
+<!-- Left Sidebar -->
+<!-- Not going to do a full DOM, you've built list views a million times by now -->
+- If this is the only list view that will ever be in the demo, no additional class name necessary. Otherwise, add a unique class such as 'sidebar'.
+- List 'view':
+  width: 259px
+  top: 56px
+  bottom: 37px
+  left: 0
+- List 'item':
+  height: 44px if you can set a 2px offset/space between each item, 46px otherwise (will vary how I do the borders between items)
+  left: 0
+  right: 0
+  icon: 32px x 32px
+  badge: to be discussed
+- Footer:
+  <div class="footer" style="width: 259px; height: 37px; bottom: 0; left: 0;"><!-- Segmented buttons with icon (+ and -) go here - should be centerY: 0; centerX: 0; --></div>
+
+
+<!-- Right Pane -->
+<div class="canvas" style="top: 57px; bottom: 0; left: 260px; right: 0;">
+  <!-- Palette -->
+  <div class="palette" style="width: 76px; height: 220px; top: 14px; right: 0;">
+    <div class="add" style="width: 75px; height: 20px; top: 1px; right: 0;">Add<!-- (if you want the arrows as per the mockup, this will either need to be an image or require an icon on either side of the text) --></div>
+    <div class="male" style="width: 75px; height: 64px; top: 23px; right: 0;"><!-- same structure as inside an orion dockbutton goes here (just the icon and label - no unique class names required) --></div>
+    <div class="female" style="width: 75px; height: 64px; top: 89px; right: 0;"><!-- same structure as inside an orion dockbutton goes here (just the icon and label - no unique class names required) --></div>
+    <div class="pet" style="width: 75px; height: 64px; top: 155px; right: 0;"><!-- same structure as inside an orion dockbutton goes here (just the icon and label - no unique class names required) --></div>
+  </div>
+</div>

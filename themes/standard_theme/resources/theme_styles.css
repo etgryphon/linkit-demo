@@ -1,3 +1,14 @@
+/* ==========================================================================
+*  Project:   StandardTheme Theme Styles
+*  Copyright: ©2010 Evin Grano and contributors
+*  ==========================================================================
+*/
+
+/* 
+  Place any styles you want to define in this file.  You can also break your
+  styles into multiple files.  Just add them to your resources or .lrpoj
+  directories to be included in the build.
+*/
 /* List */
 .sc-list-view.master-list {
   background-color:#D4DDE3;
