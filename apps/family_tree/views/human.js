@@ -12,7 +12,7 @@ sc_require('mixins/gender');
 
 LinkItDemo.HumanView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, LinkItDemo.Gender, {
   classNames: ['human'],
-  layout: { top: 0, left: 0, width: 150, height: 80 },
+  layout: { top: 0, left: 0, width: 150, height: 45 },
   displayProperties: ['content', 'isSelected'],
   
   content: null,
@@ -35,7 +35,7 @@ LinkItDemo.HumanView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, LinkItDemo.
         classNames: ['name'],
         content: content,
         isEditable: YES,
-        layout: { top: 20, left: 20, right: 20, bottom: 20},
+        layout: { centerY: 0, centerX: 0, width: 125, height: 25},
         textAlign: SC.ALIGN_CENTER,
         valueBinding: SC.binding('.name', content)
       })

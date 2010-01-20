@@ -12,7 +12,7 @@ sc_require('mixins/gender');
 
 LinkItDemo.PetView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, LinkItDemo.Gender, {
   classNames: ['pet'],
-  layout: { top: 0, left: 0, width: 150, height: 80 },
+  layout: { top: 0, left: 0, width: 150, height: 45 },
   displayProperties: ['content', 'isSelected'],
   content: null,
   
@@ -30,22 +30,21 @@ LinkItDemo.PetView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, LinkItDemo.Ge
     var contentView = this.createChildView(
       SC.View.design({
         content: content,
-        layout: { left: 0, top: 20, right: 0, bottom: 0},
+        layout: { left: 0, top: 0, right: 0, bottom: 0},
         childViews: 'name petType'.w(),
         
         name: SC.LabelView.extend({
           classNames: ['name'],
-          layout: { left: 0, top: 0, right: 0, height: 30},
+          layout: { left: 43, centerY: 0, width: 87,  height: 25},
           isEditable: YES,
           textAlign: SC.ALIGN_CENTER,
           valueBinding: SC.binding('.name', content)
         }),
         
         petType: SC.LabelView.extend({
-          classNames: ['name'],
-          layout: { left: 0, bottom: 0, right: 0, height: 30},
+          classNames: ['pet-type'],
+          layout: { left: 3, centerY: 0, width: 40, height: 25},
           isEditable: YES,
-          textAlign: SC.ALIGN_CENTER,
           valueBinding: SC.binding('.kindOfPet', content)
         })
       })
