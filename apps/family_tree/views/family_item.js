@@ -29,11 +29,11 @@ LinkItDemo.FamilyItemView = SC.View.extend( SC.ContentDisplay, {
     // This is the content of the view
     var contentView = this.createChildView(
       SC.LabelView.extend({
-        layout: { centerY: 0, left: 32, right: 25, height: 25},
+        layout: { centerY: 0, left: 10, right: 48, height: 24},
         classNames: ['name'],
         content: content,
         isEditable: YES,
-        textAlign: SC.ALIGN_CENTER,
+        fontWeight: SC.BOLD_WEIGHT,
         valueBinding: SC.binding('.name', content)
       })
     );
@@ -43,8 +43,9 @@ LinkItDemo.FamilyItemView = SC.View.extend( SC.ContentDisplay, {
       SC.LabelView.extend({
         classNames: ['badge'],
         content: content,
-        layout: { centerY: 0, right: 0, width: 25, height: 15},
+        layout: { centerY: 0, right: 10, width: 28, height: 18},
         textAlign: SC.ALIGN_CENTER,
+        fontWeight: SC.BOLD_WEIGHT,
         valueBinding: SC.binding('*members.length', content)
       })
     );

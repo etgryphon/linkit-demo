@@ -34,7 +34,7 @@ LinkItDemo.mainPage = SC.Page.design({
     master: SC.ListView.design({
       classNames: ['master-list'],
       layout: { left: 0, top: 56, width: 259, bottom: 37 },
-      rowHeight: 44,
+      rowHeight: 43,
       rowSpacing: 2,
       exampleView: LinkItDemo.FamilyItemView,
       selectionBinding: 'LinkItDemo.familiesController.selection',
