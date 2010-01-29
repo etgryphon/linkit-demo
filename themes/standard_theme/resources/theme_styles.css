@@ -44,6 +44,7 @@
 --------------------------------------------- */
 
 .master-list {
+  border-bottom: 1px solid #c2c2c2;
   background: #f2f2f2;
 }
 
@@ -74,6 +75,23 @@
 
 .master-list .selected .badge {
   background-position: 0 -117px;
+}
+
+
+/* Footer
+--------------------------------------------- */
+
+.footer {
+  border-top: 1px solid #ededed;
+  background: static_url('images/sprite.png') 0 -159px;
+}
+
+.add-icon {
+  background: static_url('images/sprite.png') 0 -194px;
+}
+
+.remove-icon {
+  background: static_url('images/sprite.png') -16px -194px;
 }
 
 

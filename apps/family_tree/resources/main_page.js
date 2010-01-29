@@ -33,7 +33,7 @@ LinkItDemo.mainPage = SC.Page.design({
     
     master: SC.ListView.design({
       classNames: ['master-list'],
-      layout: { left: 0, top: 56, width: 259, bottom: 37 },
+      layout: { left: 0, top: 56, width: 259, bottom: 36 },
       rowHeight: 43,
       rowSpacing: 2,
       exampleView: LinkItDemo.FamilyItemView,
@@ -43,11 +43,12 @@ LinkItDemo.mainPage = SC.Page.design({
     }),
     
     footer: SC.View.design({
-      layout: {left: 0, bottom: 0, width: 259, height: 37},
+      classNames: ['footer'],
+      layout: {left: 0, bottom: 0, width: 259, height: 35},
       childViews: 'buttons'.w(),
       
       buttons: SC.SegmentedView.design({
-        layout: {centerX: 0, centerY: 0, height: 24, width: 210 },
+        layout: {centerX: 0, centerY: 0, height: 24, width: 81 },
         allowsMultipleSelection: NO,
         allowsEmptySelection: YES,
         value: null,
