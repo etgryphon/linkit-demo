@@ -6,6 +6,7 @@
 sc_require('core');
 sc_require('views/family_item');
 sc_require('views/add_button');
+sc_require('views/list_button');
 
 // This page describes the main user interface for your application.  
 LinkItDemo.mainPage = SC.Page.design({
@@ -45,31 +46,20 @@ LinkItDemo.mainPage = SC.Page.design({
     footer: SC.View.design({
       classNames: ['footer'],
       layout: {left: 0, bottom: 0, width: 259, height: 35},
-      childViews: 'buttons'.w(),
+      childViews: 'addFamilyButton removeFamilyButton'.w(),
       
-      buttons: SC.SegmentedView.design({
-        layout: {centerX: 0, centerY: 0, height: 24, width: 81 },
-        allowsMultipleSelection: NO,
-        allowsEmptySelection: YES,
-        value: null,
-        items: [
-          {
-            title: '',
-            icon: 'add-icon',
-            target: LinkItDemo.familiesController,
-            action: 'addFamily'
-          },
-          {
-            title: '',
-            icon: 'remove-icon',
-            target: LinkItDemo.familiesController,
-            action: 'removeFamily'
-          }
-        ],
-        itemTitleKey: 'title',
-        itemTargetKey: 'target',
-        itemActionKey: 'action',
-        itemIconKey: 'icon'
+      addFamilyButton: LinkItDemo.ListButtonView.design({
+        layout: {centerX: -42, centerY: 0, height: 24, width: 42 },
+        classNames: ['add'],
+        target: LinkItDemo.familiesController,
+        action: 'addFamily'
+      }),
+      
+      removeFamilyButton: LinkItDemo.ListButtonView.design({
+        layout: {centerX: 42, centerY: 0, height: 24, width: 42 },
+        classNames: ['remove'],
+        target: LinkItDemo.familiesController,
+        action: 'removeFamily'
       })
     }),
     
