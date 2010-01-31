@@ -29,6 +29,19 @@ LinkItDemo.HumanView = SC.View.extend(SCUI.Cleanup, LinkIt.NodeView, LinkItDemo.
     
     var isMale = content.get('isMale');
     
+    var iconView = this.createChildView(
+      SC.View.extend({
+        classNames: ['icon'],
+        content: content,
+        layout: { centerY: 0, left: 5, width: 25, height: 25},
+        render: function(context, firstTime){
+          context = isMale ? context.addClass('male') : context.addClass('female') ;
+          sc_super();
+        }
+      })
+    );
+    childViews.push(iconView);
+    
     // This is the content of the view
     var contentView = this.createChildView(
       SC.LabelView.extend({
