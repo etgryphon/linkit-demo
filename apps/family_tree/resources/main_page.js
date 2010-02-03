@@ -73,6 +73,7 @@ LinkItDemo.mainPage = SC.Page.design({
     
     palette: SC.View.design({
       layout: {right: 0, top: 56, height: 220, width: 76},
+      classNames: ['palette'],
       childViews: 'addTitle addMale addFemale addPet'.w(),
       
       addTitle: SC.LabelView.design({
