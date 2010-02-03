@@ -86,12 +86,35 @@
   background: static_url('images/sprite.png') 0 -159px;
 }
 
-.add-icon {
-  background: static_url('images/sprite.png') 0 -194px;
+.footer .add {
+  background: static_url('images/sprite.png') 0 -210px;
 }
 
-.remove-icon {
-  background: static_url('images/sprite.png') -16px -194px;
+.footer .add.active {
+  background-position: 0 -258px;
+}
+
+.footer .remove {
+  background: static_url('images/sprite.png') 0 -234px;
+}
+
+.footer .remove.active {
+  background-position: 0 -282px;
+}
+
+.footer img {
+  width: 16px;
+  height: 16px;
+  margin: 5px 0 0 6px;
+  background: static_url('images/sprite.png');
+}
+
+.footer .add img {
+  background-position: 0 -194px;
+}
+
+.footer .remove img {
+  background-position: -16px -194px;
 }
 
 

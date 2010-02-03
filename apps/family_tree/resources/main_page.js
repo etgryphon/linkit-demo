@@ -49,14 +49,14 @@ LinkItDemo.mainPage = SC.Page.design({
       childViews: 'addFamilyButton removeFamilyButton'.w(),
       
       addFamilyButton: LinkItDemo.ListButtonView.design({
-        layout: {centerX: -42, centerY: 0, height: 24, width: 42 },
+        layout: {centerX: -13, centerY: 0, height: 24, width: 27 },
         classNames: ['add'],
         target: LinkItDemo.familiesController,
         action: 'addFamily'
       }),
       
       removeFamilyButton: LinkItDemo.ListButtonView.design({
-        layout: {centerX: 42, centerY: 0, height: 24, width: 42 },
+        layout: {centerX: 14, centerY: 0, height: 24, width: 27 },
         classNames: ['remove'],
         target: LinkItDemo.familiesController,
         action: 'removeFamily'
