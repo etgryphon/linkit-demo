@@ -4,13 +4,6 @@
 *  ==========================================================================
 */
 
-/* 
-  Place any styles you want to define in this file.  You can also break your
-  styles into multiple files.  Just add them to your resources or .lrpoj
-  directories to be included in the build.
-*/
-
-
 /* Header
 --------------------------------------------- */
 
@@ -24,7 +17,7 @@
   position: absolute;
   top: 50%;
   left: 10px;
-  margin: -18px 0 0;
+  margin: -15px 0 0;
   background: static_url('images/logo.png');
   text-indent: -9999px;
 }
@@ -33,10 +26,17 @@
   width: 171px;
   height: 15px;
   position: absolute;
-  bottom: 10px;
+  bottom: 6px;
   right: 10px;
   background: static_url('images/blurb.png');
   text-indent: -9999px;
+}
+
+.leaves {
+  width: 979px;
+  height: 56px;
+  position: absolute;
+  background: static_url('images/leaves.png') no-repeat;
 }
 
 
@@ -78,7 +78,7 @@
 }
 
 
-/* Footer
+/* Master List Footer
 --------------------------------------------- */
 
 .footer {
@@ -86,40 +86,91 @@
   background: static_url('images/sprite.png') 0 -159px;
 }
 
-.add-icon {
-  background: static_url('images/sprite.png') 0 -194px;
+.add {
+  background: static_url('images/sprite.png') no-repeat 0 -210px;
+}
+.add.active {
+  background: static_url('images/sprite.png') no-repeat 0 -258px;
+}
+.add img {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  margin-top: -6px;
+  margin-left: -6px;
+  background: static_url('images/sprite.png') no-repeat 0 -194px;
 }
 
-.remove-icon {
+.remove {
+  background: static_url('images/sprite.png') no-repeat 0 -234px;
+}
+.remove.active {
+  background: static_url('images/sprite.png') no-repeat 0 -282px;
+}
+.remove img {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  margin-top: -6px;
+  margin-left: -8px;
   background: static_url('images/sprite.png') -16px -194px;
 }
 
 
-/* OLD STUFF - To Be Replaced
+/* Workspace
 --------------------------------------------- */
 
-/* Canvas */
+/* Background */
 .family-canvas {
-  background-color: #555;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #d0d0d0;
+  background: #f4fafb;
 }
+
+/* Add Person Palette*/
+.addbutton-view {
+  -webkit-transition: right 0.3s ease-out;
+  background: static_url('images/sprite.png') 0 -306px no-repeat;
+}
+
+.addbutton-view.hover {
+  right: 0 !important;
+}
+
+.addbutton-view.active {
+  right: 0 !important;
+  background: static_url('images/sprite.png') 0 -333px no-repeat;
+}
+
+.addbutton-view .label {
+  margin-left: 30px;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px white;
+}
+
  
 /* Nodes */
 .human, .pet {
   border: 2px solid rgba(112, 255, 255, 0);
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .75);
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .75);
-  overflow:visible; /* why not let the terminals poke out a bit? */
-  
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  opacity: 0.7;
+  overflow:visible; 
   -moz-transition: border .1s linear;
   -webkit-transition: border .1s linear;
 }
  
 .human.selected, .pet.selected {
   border: 2px solid rgba(255, 255, 255, 1);
-  -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, .75);
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
 }
  
 .male {

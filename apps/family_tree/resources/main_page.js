@@ -29,6 +29,9 @@ LinkItDemo.mainPage = SC.Page.design({
                     .addClass('blurb')
                       .text('a scui linkit example')
                   .end();
+        context = context.begin('div')
+                   .addClass('leaves')
+                  .end();
       }
     }),
     
@@ -49,14 +52,14 @@ LinkItDemo.mainPage = SC.Page.design({
       childViews: 'addFamilyButton removeFamilyButton'.w(),
       
       addFamilyButton: LinkItDemo.ListButtonView.design({
-        layout: {centerX: -42, centerY: 0, height: 24, width: 42 },
+        layout: {centerX: -14, centerY: 0, height: 24, width: 27 },
         classNames: ['add'],
         target: LinkItDemo.familiesController,
         action: 'addFamily'
       }),
       
       removeFamilyButton: LinkItDemo.ListButtonView.design({
-        layout: {centerX: 42, centerY: 0, height: 24, width: 42 },
+        layout: {centerX: 13, centerY: 0, height: 24, width: 27 },
         classNames: ['remove'],
         target: LinkItDemo.familiesController,
         action: 'removeFamily'
@@ -72,36 +75,26 @@ LinkItDemo.mainPage = SC.Page.design({
     }),    
     
     palette: SC.View.design({
-      layout: {right: 0, top: 56, height: 220, width: 76},
-      childViews: 'addTitle addMale addFemale addPet'.w(),
-      
-      addTitle: SC.LabelView.design({
-        layout: {right: 0, top: 1, width: 75, height: 20},
-        classNames: 'add'.w(),
-        textAlign: SC.ALIGN_CENTER,
-        value: 'Add'
-      }),
+      layout: {right: 0, top: 56, height: 96, width: 84 },
+      childViews: 'addMale addFemale addPet'.w(),
       
       addMale: LinkItDemo.AddButtonView.design({
-        layout: { top: 23, right: 0 },
+        layout: { top: 4, right: -54 },
         title: "Male",
-        icon: 'male-icon',
         target: LinkItDemo.familyController,
         action: 'addMale'
       }),
             
       addFemale: LinkItDemo.AddButtonView.design({
-        layout: { top: 89, right: 0 },
+        layout: { top: 36, right: -54 },
         title: "Female",
-        icon: 'female-icon',
         target: LinkItDemo.familyController,
         action: 'addFemale'
       }),
       
       addPet: LinkItDemo.AddButtonView.design({
-        layout: { top: 155, right: 0 },
+        layout: { top: 69, right: -54 },
         title: "Pet",
-        icon: 'pet-icon',
         target: LinkItDemo.familyController,
         action: 'addPet'
       })
