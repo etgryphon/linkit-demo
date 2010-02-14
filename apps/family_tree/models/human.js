@@ -140,10 +140,10 @@ LinkItDemo.Human = SC.Record.extend(LinkIt.Node, {
     if(et === 'sig'){
       this.set('spouse', en);
     }
-    else if (et === 'mom'){
+    else if (et === 'mom' && sn !== this){
       this.set('mother', sn);
     }
-    else if (et === 'dad'){
+    else if (et === 'dad' && sn !== this){
       this.set('father', sn);
     }
   },

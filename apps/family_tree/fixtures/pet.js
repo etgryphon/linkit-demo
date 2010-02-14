@@ -13,7 +13,7 @@ LinkItDemo.Pet.FIXTURES = [
     isMale: true,
     belongsTo: '4',
     family: '1',
-    position: {top: 400, left: 450}
+    position: {y: 400, x: 450}
   },
   
   // ..........................................................
@@ -27,6 +27,6 @@ LinkItDemo.Pet.FIXTURES = [
     isMale: true,
     belongsTo: '8',
     family: '2',
-    position: {top: 300, left: 150}
+    position: {y: 300, x: 150}
   }
 ];

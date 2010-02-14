@@ -15,7 +15,7 @@ LinkItDemo.Human.FIXTURES = [
     father: null,
     spouse: '2',
     pets: [],
-    position: {top: 10, left: 10}
+    position: {y: 10, x: 10}
   },
   
   {
@@ -28,7 +28,7 @@ LinkItDemo.Human.FIXTURES = [
     father: null,
     spouse: '1',
     pets: [],
-    position: {top: 35, left: 300}
+    position: {y: 35, x: 300}
   },
   
   {
@@ -41,7 +41,7 @@ LinkItDemo.Human.FIXTURES = [
     father: '1',
     spouse: null,
     pets: [],
-    position: {top: 300, left: 10}
+    position: {y: 300, x: 10}
   },
   
   {
@@ -54,7 +54,7 @@ LinkItDemo.Human.FIXTURES = [
     father: '1',
     spouse: '1',
     pets: [],
-    position: {top: 300, left: 300}
+    position: {y: 300, x: 300}
   },
   
   // ..........................................................
@@ -70,7 +70,7 @@ LinkItDemo.Human.FIXTURES = [
     father: null,
     spouse: null,
     pets: [],
-    position: {top: 10, left: 10}
+    position: {y: 10, x: 10}
   },
   
   {
@@ -83,7 +83,7 @@ LinkItDemo.Human.FIXTURES = [
     father: null,
     spouse: '7',
     pets: [],
-    position: {top: 10, left: 300}
+    position: {y: 10, x: 300}
   },
   
   {
@@ -96,7 +96,7 @@ LinkItDemo.Human.FIXTURES = [
     father: null,
     spouse: '6',
     pets: [],
-    position: {top: 35, left: 500}
+    position: {y: 35, x: 500}
   },
   
   {
@@ -109,7 +109,7 @@ LinkItDemo.Human.FIXTURES = [
     father: '5',
     spouse: '9',
     pets: [],
-    position: {top: 200, left: 300}
+    position: {y: 200, x: 300}
   },
   
   {
@@ -122,7 +122,7 @@ LinkItDemo.Human.FIXTURES = [
     father: null,
     spouse: '5',
     pets: [],
-    position: {top: 225, left: 500}
+    position: {y: 225, x: 500}
   },
   
   {
@@ -135,7 +135,7 @@ LinkItDemo.Human.FIXTURES = [
     father: '8',
     spouse: null,
     pets: [],
-    position: {top: 400, left: 250}
+    position: {y: 400, x: 250}
   },
   
   {
@@ -148,6 +148,6 @@ LinkItDemo.Human.FIXTURES = [
     father: '8',
     spouse: null,
     pets: [],
-    position: {top: 400, left: 550}
+    position: {y: 400, x: 550}
   }
 ];
