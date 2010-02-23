@@ -128,29 +128,27 @@
 .family-canvas {
   border-top: 1px solid #fff;
   border-left: 1px solid #d0d0d0;
-  background: #f4fafb;
+  background: static_url('images/workspace-bg.png');
 }
 
 /* Add Person Palette*/
-.addbutton-view {
-  -webkit-transition: right 0.3s ease-out;
-  background: static_url('images/sprite.png') 0 -306px no-repeat;
-}
-
-.addbutton-view.hover {
-  right: 0 !important;
-}
-
-.addbutton-view.active {
-  right: 0 !important;
-  background: static_url('images/sprite.png') 0 -333px no-repeat;
-}
 
 .addbutton-view .label {
-  margin-left: 30px;
-  line-height: 27px;
-  text-transform: uppercase;
-  text-shadow: 0px 1px 1px white;
+  display: none;
+}
+
+.add-decorator {
+  background: static_url('images/sprite.png') -12px -307px;
+}
+
+.add-male {
+  background: static_url('images/sprite.png') -12px -330px;
+}
+.add-female {
+  background: static_url('images/sprite.png') -12px -395px;
+}
+.add-pet {
+  background: static_url('images/sprite.png') -12px -461px;
 }
 
  

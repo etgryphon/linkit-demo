@@ -26,7 +26,7 @@ LinkItDemo.AddButtonView = SC.View.extend( SCUI.SimpleButton,
   */
   hasSelectionDecoration: YES,
   
-  buttonSize: { width: 84, height: 27 },
+  buttonSize: { width: 77 },
   
   displayProperties: ['isSelected'],
   

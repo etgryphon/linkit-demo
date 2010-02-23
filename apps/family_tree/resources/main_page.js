@@ -75,25 +75,33 @@ LinkItDemo.mainPage = SC.Page.design({
     }),    
     
     palette: SC.View.design({
-      layout: {right: 0, top: 56, height: 96, width: 84 },
-      childViews: 'addMale addFemale addPet'.w(),
+      layout: {right: 0, top: 62, height: 222, width: 77 },
+      childViews: 'addDecorator addMale addFemale addPet'.w(),
+      
+      addDecorator: SC.View.design({
+        layout: { left: 0, right: 0, top: 0, height: 23 },
+        classNames: ['add-decorator']
+      }),
       
       addMale: LinkItDemo.AddButtonView.design({
-        layout: { top: 4, right: -54 },
+        layout: { left: 0, right: 0, top: 23, height: 65 },
+        classNames: ['add-male'],
         title: "Male",
         target: LinkItDemo.familyController,
         action: 'addMale'
       }),
             
       addFemale: LinkItDemo.AddButtonView.design({
-        layout: { top: 36, right: -54 },
+        layout: { left: 0, right: 0, top: 88, height: 66 },
+        classNames: ['add-female'],
         title: "Female",
         target: LinkItDemo.familyController,
         action: 'addFemale'
       }),
       
       addPet: LinkItDemo.AddButtonView.design({
-        layout: { top: 69, right: -54 },
+        layout: { left: 0, right: 0, top: 154, height: 68 },
+        classNames: ['add-pet'],
         title: "Pet",
         target: LinkItDemo.familyController,
         action: 'addPet'
