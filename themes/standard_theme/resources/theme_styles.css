@@ -151,6 +151,16 @@
   background: static_url('images/sprite.png') -12px -461px;
 }
 
+.add-male.active {
+  background: static_url('images/sprite.png') -12px -552px;
+}
+.add-female.active {
+  background: static_url('images/sprite.png') -12px -617px;
+}
+.add-pet.active {
+  background: static_url('images/sprite.png') -12px -683px;
+}
+
  
 /* Nodes */
 .human, .pet {
