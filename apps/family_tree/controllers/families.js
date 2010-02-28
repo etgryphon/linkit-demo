@@ -29,6 +29,7 @@ LinkItDemo.familiesController = SC.ArrayController.create(
     },
     
     removeFamily: function(){
-      alert('You are removing a family');
+      var sel = this.getPath('selection.firstObject');
+      LinkItDemo.destroyRecord(sel);
     }
 });

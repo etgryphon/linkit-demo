@@ -71,4 +71,11 @@ LinkItDemo = SC.Application.create(
     return this.get('store').createRecord(recordType, dataHash);
   },
   
+  destroyRecord: function(rec){
+    if (SC.none(rec) || !SC.kindOf(rec, SC.Record)) return NO;
+    var sk = rec.get('storeKey');
+    this.get('store').destroyRecord(null, null, sk);
+    return YES;
+  }
+  
 }) ;
