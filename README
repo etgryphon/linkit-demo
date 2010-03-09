@@ -10,6 +10,7 @@ In your projects directory, run:
   mkdir frameworks
   cd frameworks
   git clone git://github.com/etgryphon/sproutcore-ui.git scui
+  git clone git://github.com/sproutit/sproutcore.git
 
 === USAGE ===
 
