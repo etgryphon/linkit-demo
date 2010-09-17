@@ -1,4 +1,3 @@
-sc_require('core');
 sc_require('models/human');
 
 LinkItDemo.Human.FIXTURES = [

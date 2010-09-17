@@ -66,12 +66,13 @@ LinkItDemo.mainPage = SC.Page.design({
       })
     }),
     
-    canvas: LinkIt.CanvasView.design( SCUI.Cleanup, {
+    canvas: LinkIt.CanvasView.design({
       layout: { left: 259, right: 0, top: 56, bottom: 0 },
       classNames: ['family-canvas'],
       contentBinding: SC.Binding.from('LinkItDemo.membersController').oneWay(),
       selectionBinding: 'LinkItDemo.membersController.selection',
-      nodeViewDelegate: LinkItDemo.familyController
+      nodeViewDelegate: LinkItDemo.familyController,
+      exampleView: LinkItDemo.NodeView
     }),    
     
     palette: SC.View.design({

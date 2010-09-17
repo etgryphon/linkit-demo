@@ -44,21 +44,6 @@ LinkItDemo.familyController = SC.ObjectController.create(
   addPet: function() {
     var c = this.get('content') || null;
     if(c) c.addMember(LinkItDemo.Pet, YES);
-  },
-  
-  
-  // Special Function for LinkIt to create the Example View for the Node
-  exampleViewForNode: function(node) {
-    //console.log('%@.exampleViewForContent(%@)'.fmt(this, node));
-
-    if (node.instanceOf(LinkItDemo.Pet)) {
-      return LinkItDemo.PetView;
-    }
-    else if (node.instanceOf(LinkItDemo.Human)) {
-      return LinkItDemo.HumanView;
-    }
-    
-    return null;
   }
 
 });

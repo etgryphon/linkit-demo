@@ -16,7 +16,9 @@ LinkItDemo.Pet = SC.Record.extend(LinkIt.Node, {
   isMale: SC.Record.attr(Boolean, { isRequired: YES, defaultValue: YES }),
   belongsTo: SC.Record.attr('LinkItDemo.Human'),
   family: SC.Record.attr('LinkItDemo.Family'),
-    
+  isPet: YES,
+  
+  
   // ..........................................................
   // LINKIT SPECIFIC INFORMTION
   // 
