@@ -52,7 +52,6 @@ LinkItDemo.Family = SC.Record.extend({
         name: 'Name here...',
         kindOfPet: 'Dog'
       });
-      
       if (member.instanceOf(LinkItDemo.Human)){
         var ppl = this.get('people');
         ppl.pushObject(member);

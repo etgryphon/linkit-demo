@@ -43,7 +43,10 @@ LinkItDemo.mainPage = SC.Page.design({
       exampleView: LinkItDemo.FamilyItemView,
       selectionBinding: 'LinkItDemo.familiesController.selection',
       contentBinding: 'LinkItDemo.familiesController',
-      contentValueKey: 'name'
+      contentValueKey: 'name',
+      actOnSelect: YES,
+      target: LinkItDemo.familiesController,
+      action: 'changedFamily'
     }),
     
     footer: SC.View.design({

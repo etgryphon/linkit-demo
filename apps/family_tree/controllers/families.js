@@ -17,6 +17,10 @@ LinkItDemo.familiesController = SC.ArrayController.create(
     content: null,
     selection: null,
     
+    changedFamily: function(){
+      LinkItDemo.getPath('mainPage.mainPane.canvas').displayDidChange();
+    },
+    
     addFamily: function(){
       var store = LinkItDemo.get('store');
       if (store) {

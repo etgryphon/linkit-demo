@@ -22,6 +22,7 @@ LinkItDemo.main = function main() {
   // Step 2. Set the content property on your primary controller.
   var store = LinkItDemo.get('store');
   LinkItDemo.familiesController.set('content', store.find(LinkItDemo.Family));
+  
 } ;
 
 function main() { LinkItDemo.main(); }
