@@ -1,8 +1,8 @@
-/*globals  LinkItDemo*/
+/*globals  FamilyTree*/
 /**
  * The base human model.
  *
- * @extends LinkItDemo.Human
+ * @extends FamilyTree.Human
  * @author Evin Grano
  *
  * @version 0.1
@@ -10,15 +10,15 @@
  */
 sc_require('core');
 
-LinkItDemo.Human = SC.Record.extend(LinkIt.Node, { 
+FamilyTree.Human = SC.Record.extend(LinkIt.Node, { 
   primaryKey: 'id',
   name: SC.Record.attr(String, { isRequired: YES, defaultValue: 'Enter Name' }),
   isMale: SC.Record.attr(Boolean, { isRequired: YES, defaultValue: YES }),
-  family: SC.Record.attr('LinkItDemo.Family'),
-  mother: SC.Record.attr('LinkItDemo.Human'),
-  father: SC.Record.attr('LinkItDemo.Human'),
-  spouse: SC.Record.attr('LinkItDemo.Human'),
-  pets: SC.Record.toMany('LinkItDemo.Pet', {
+  family: SC.Record.attr('FamilyTree.Family'),
+  mother: SC.Record.attr('FamilyTree.Human'),
+  father: SC.Record.attr('FamilyTree.Human'),
+  spouse: SC.Record.attr('FamilyTree.Human'),
+  pets: SC.Record.toMany('FamilyTree.Pet', {
     inverse: 'belongsTo',
     isMaster: YES
   }),

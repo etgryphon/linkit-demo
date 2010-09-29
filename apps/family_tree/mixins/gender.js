@@ -1,6 +1,6 @@
 /**
  * The base Gender view.
- * @class LinkItDemo.PetView
+ * @class FamilyTree.PetView
  * @extends SC.View
  * @author Evin Grano
  *
@@ -9,7 +9,7 @@
  */
 sc_require('core');
 
-LinkItDemo.Gender = {
+FamilyTree.Gender = {
   
   renderMixin: function(context, firstTime){
     var c = this.get('content');

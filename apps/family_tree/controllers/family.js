@@ -1,5 +1,5 @@
 // ==========================================================================
-// LinkItDemo.familyController
+// FamilyTree.familyController
 // ==========================================================================
 
 sc_require('core');
@@ -12,7 +12,7 @@ sc_require('core');
   This controller holds all the family tree information. It transforms the objects array into a list of nodes
   that LinkIt can use.
 */
-LinkItDemo.familyController = SC.ObjectController.create( 
+FamilyTree.familyController = SC.ObjectController.create( 
   /* @scope */{
 
   // PUBLIC PROPERTIES
@@ -24,7 +24,7 @@ LinkItDemo.familyController = SC.ObjectController.create(
   */
   isEditable: NO,
   
-  contentBinding: 'LinkItDemo.familiesController.selection',
+  contentBinding: 'FamilyTree.familiesController.selection',
   contentBindingDefault: SC.Binding.oneWay().single(),
 
   // PUBLIC METHODS
@@ -33,17 +33,17 @@ LinkItDemo.familyController = SC.ObjectController.create(
   */
   addMale: function() {
     var c = this.get('content') || null;
-    if(c) c.addMember(LinkItDemo.Human, YES);
+    if(c) c.addMember(FamilyTree.Human, YES);
   },
 
   addFemale: function() {
     var c = this.get('content') || null;
-    if(c) c.addMember(LinkItDemo.Human, NO);
+    if(c) c.addMember(FamilyTree.Human, NO);
   },
   
   addPet: function() {
     var c = this.get('content') || null;
-    if(c) c.addMember(LinkItDemo.Pet, YES);
+    if(c) c.addMember(FamilyTree.Pet, YES);
   }
 
 });

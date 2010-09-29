@@ -1,8 +1,8 @@
 // ==========================================================================
-// Project:   LinkItDemo
+// Project:   FamilyTree
 // Copyright: ©2009 My Company, Inc.
 // ==========================================================================
-/*globals LinkItDemo */
+/*globals FamilyTree */
 
 // This is the function that will start your app running.  The default
 // implementation will load any fixtures you have created then instantiate
@@ -11,18 +11,18 @@
 // As you develop your application you will probably want to override this.
 // See comments for some pointers on what to do next.
 //
-LinkItDemo.main = function main() {
+FamilyTree.main = function main() {
 
   // Step 1: Instantiate Your Views
   // The default code here will make the mainPane for your application visible
   // on screen.  If you app gets any level of complexity, you will probably 
   // create multiple pages and panes.  
-  LinkItDemo.getPath('mainPage.mainPane').append() ;
+  FamilyTree.getPath('mainPage.mainPane').append() ;
 
   // Step 2. Set the content property on your primary controller.
-  var store = LinkItDemo.get('store');
-  LinkItDemo.familiesController.set('content', store.find(LinkItDemo.Family));
+  var store = FamilyTree.get('store');
+  FamilyTree.familiesController.set('content', store.find(FamilyTree.Family));
   
 } ;
 
-function main() { LinkItDemo.main(); }
+function main() { FamilyTree.main(); }

@@ -1,17 +1,17 @@
 /**
  * The base human view.
- * @class LinkItDemo.HumanView
+ * @class FamilyTree.HumanView
  * @extends SC.View
  * @author Evin Grano
  *
  * @version 0.1
  * @since 0.1
  */
- /*globals LinkIt LinkItDemo*/
+ /*globals LinkIt FamilyTree*/
 sc_require('core');
 sc_require('mixins/gender');
 
-LinkItDemo.NodeView = SC.View.extend(LinkIt.NodeView, LinkItDemo.Gender, {
+FamilyTree.NodeView = SC.View.extend(LinkIt.NodeView, FamilyTree.Gender, {
   layout: { top: 0, left: 0, width: 150, height: 45 },
   displayProperties: ['content', 'isSelected'],
   

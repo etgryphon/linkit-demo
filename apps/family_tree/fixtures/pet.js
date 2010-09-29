@@ -1,6 +1,6 @@
 
 sc_require('models/pet');
-LinkItDemo.Pet.FIXTURES = [
+FamilyTree.Pet.FIXTURES = [
   // ..........................................................
   // Doe Family
   // 

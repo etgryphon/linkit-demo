@@ -1,5 +1,5 @@
 // ==========================================================================
-// LinkItDemo.familiesController
+// FamilyTree.familiesController
 // ==========================================================================
 
 sc_require('core');
@@ -12,19 +12,19 @@ sc_require('core');
   This controller holds all the family tree information. It transforms the objects array into a list of nodes
   that LinkIt can use.
 */
-LinkItDemo.familiesController = SC.ArrayController.create( 
-  /* @scope LinkItDemo.familiesController */{
+FamilyTree.familiesController = SC.ArrayController.create( 
+  /* @scope FamilyTree.familiesController */{
     content: null,
     selection: null,
     
     changedFamily: function(){
-      LinkItDemo.getPath('mainPage.mainPane.canvas').displayDidChange();
+      FamilyTree.getPath('mainPage.mainPane.canvas').displayDidChange();
     },
     
     addFamily: function(){
-      var store = LinkItDemo.get('store');
+      var store = FamilyTree.get('store');
       if (store) {
-        var family = LinkItDemo.createRecord(LinkItDemo.Family, {
+        var family = FamilyTree.createRecord(FamilyTree.Family, {
           name: 'New Family',
           people: [],
           pets: []
@@ -34,6 +34,6 @@ LinkItDemo.familiesController = SC.ArrayController.create(
     
     removeFamily: function(){
       var sel = this.getPath('selection.firstObject');
-      LinkItDemo.destroyRecord(sel);
+      FamilyTree.destroyRecord(sel);
     }
 });

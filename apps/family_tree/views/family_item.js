@@ -1,6 +1,6 @@
 /**
  * The family list item view.
- * @class LinkItDemo.FamilyItemView
+ * @class FamilyTree.FamilyItemView
  * @extends SC.View
  * @author Evin Grano
  *
@@ -9,7 +9,7 @@
  */
 sc_require('core');
 
-LinkItDemo.FamilyItemView = SC.View.extend( SC.ContentDisplay, {
+FamilyTree.FamilyItemView = SC.View.extend( SC.ContentDisplay, {
   
   classNames: ['family'],
   displayProperties: ['content', 'isSelected'],

@@ -1,5 +1,5 @@
 // ==========================================================================
-// LinkItDemo.ListButtonView
+// FamilyTree.ListButtonView
 // ==========================================================================
 
 sc_require('core');
@@ -12,7 +12,7 @@ sc_require('core');
   @since ALPHA
 
 */
-LinkItDemo.ListButtonView = SC.View.extend( SCUI.SimpleButton,
+FamilyTree.ListButtonView = SC.View.extend( SCUI.SimpleButton,
 /** @scope SC.DockButtonView.prototype */ {
   title: "",
   icon: null,

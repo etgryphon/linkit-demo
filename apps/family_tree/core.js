@@ -1,8 +1,8 @@
 // ==========================================================================
-// Project:   LinkItDemo
+// Project:   FamilyTree
 // Copyright: ©2009 My Company, Inc.
 // ==========================================================================
-/*globals LinkItDemo */
+/*globals FamilyTree */
 
 /** @namespace
 
@@ -10,10 +10,10 @@
   
   @extends SC.Object
 */
-LinkItDemo = SC.Application.create(
-  /** @scope LinkItDemo.prototype */ {
+FamilyTree = SC.Application.create(
+  /** @scope FamilyTree.prototype */ {
 
-  NAMESPACE: 'LinkItDemo',
+  NAMESPACE: 'FamilyTree',
   VERSION: '0.1.0',
 
   // This is your application store.  You will use this store to access all

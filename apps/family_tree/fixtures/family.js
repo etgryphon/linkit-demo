@@ -1,6 +1,6 @@
 sc_require('models/family');
 
-LinkItDemo.Family.FIXTURES = [
+FamilyTree.Family.FIXTURES = [
   {
     id: '1',
     type: 'Family',

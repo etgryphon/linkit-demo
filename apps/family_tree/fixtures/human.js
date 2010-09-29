@@ -1,6 +1,6 @@
 sc_require('models/human');
 
-LinkItDemo.Human.FIXTURES = [
+FamilyTree.Human.FIXTURES = [
   // ..........................................................
   // Doe Family
   // 
