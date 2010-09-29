@@ -1,3 +1,4 @@
+/*globals  LinkItDemo*/
 /**
  * The base human model.
  *
@@ -135,8 +136,9 @@ LinkItDemo.Human = SC.Record.extend(LinkIt.Node, {
   },
   
   didCreateLink: function(link) {
-    var sn = link.get('startNode'), st = link.get('startTerminal');
-    var en = link.get('endNode'), et = link.get('endTerminal');
+    var l = link[0];
+    var sn = l.get('startNode'), st = l.get('startTerminal');
+    var en = l.get('endNode'), et = l.get('endTerminal');
     if(et === 'sig'){
       this.set('spouse', en);
     }
