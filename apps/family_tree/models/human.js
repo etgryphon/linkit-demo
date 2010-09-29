@@ -136,7 +136,7 @@ FamilyTree.Human = SC.Record.extend(LinkIt.Node, {
   },
   
   didCreateLink: function(link) {
-    var l = link[0];
+    var l = link[0]; // The link is comprised of an ARRAY of links with the Bi-directional links...often you only need the first object to complete the link
     var sn = l.get('startNode'), st = l.get('startTerminal');
     var en = l.get('endNode'), et = l.get('endTerminal');
     if(et === 'sig'){
