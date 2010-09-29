@@ -2,6 +2,9 @@
 
 This is a basic sample app for some great directed and non-directed graph from the SCUI:LinkIt framework
 
+This is an official demo of Sproutcore and SCUI/LinkIt and can be found as a part of the SproutCore Demos:
+  http://github.com/sproutcore/demos
+
 === INSTALLATION ===
 
 In your projects directory, run:
@@ -10,7 +13,6 @@ In your projects directory, run:
   mkdir frameworks
   cd frameworks
   git clone git://github.com/etgryphon/sproutcore-ui.git scui
-  git clone git://github.com/sproutit/sproutcore.git
 
 === USAGE ===
 
@@ -26,8 +28,13 @@ After INSTALLATION:
 
 === CONTRIBUTORS ===
 
-Main Architect: Evin Grano (etgryphon)
-Design: Matt Grantham (in), Ryan Mudryk (it), Alex Iskander (ialexi)
+Main Architect: Evin Grano (@etgryphon)
+Contributors:
+  Mike Ball (@onkis)
+Designers: 
+  Matt Grantham (in), 
+  Ryan Mudryk (it), 
+  Alex Iskander (ialexi)
   
 === LICENSE ===
 

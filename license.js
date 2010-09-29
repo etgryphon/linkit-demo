@@ -1,7 +1,7 @@
 /*! @license
 ==========================================================================
 LinkIt Demo -- Sproutcore-UI (SCUI) LinkIt Framework Demo Application
-Copyright: ©2009 Evin Grano
+Copyright: ©2009,2010 Evin Grano and contributors
           
 Permission is hereby granted, free of charge, to any person obtaining a 
 copy of this software and associated documentation files (the "Software"), 
